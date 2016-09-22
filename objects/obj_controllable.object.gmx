@@ -67,13 +67,29 @@ upKey = keyboard_check(vk_up)
 
 
 
-
+// set direction on keypress
 if(leftKey and !moving){
     moving = true
     dir = 'left'
     location = 0
 }
+if(rightKey and !moving){
+    moving = true
+    dir = 'right'
+    location = 0
+}
+if(upKey and !moving){
+    moving = true
+    dir = 'up'
+    location = 0
+}
+if(downKey and !moving){
+    moving = true
+    dir = 'down'
+    location = 0
+}
 
+// move according to the key press
 if (moving and dir == 'left'){
     phy_position_x -= walker_speed;
     image_speed= walker_speed/2;
@@ -82,25 +98,37 @@ if (moving and dir == 'left'){
         moving = false
     }
 }
+if (moving and dir == 'right'){
+    phy_position_x += walker_speed;
+    image_speed= walker_speed/2;
+    location += walker_speed;
+    if (location &gt;= 32){
+        moving = false
+    }
+}
 
+if (moving and dir == 'down'){
+    phy_position_y += walker_speed;
+    image_speed= walker_speed/2;
+    location += walker_speed;
+    if (location &gt;= 32){
+        moving = false
+    }
+}
+
+if (moving and dir == 'up'){
+    phy_position_y -= walker_speed;
+    image_speed= walker_speed/2;
+    location += walker_speed;
+    if (location &gt;= 32){
+        moving = false
+    }
+}
 
 //if (leftKey){
 //    phy_position_x -= walker_speed;
 //    image_speed= walker_speed/2;
 //}
-
-if (rightKey){
-    phy_position_x += walker_speed;
-    image_speed=walker_speed/2;
-}
-if (upKey){
-    phy_position_y -= walker_speed;
-    image_speed=walker_speed/2;
-}
-if (downKey){
-    phy_position_y += walker_speed;
-    image_speed= walker_speed/2;
-}
 
 if(!leftKey and !rightKey and !downKey and !upKey and !moving){
     image_speed=0;
