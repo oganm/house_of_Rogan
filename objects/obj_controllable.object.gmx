@@ -32,9 +32,14 @@ image_speed=0
 
 moving = false
 
+//settings of the walker
 walker_speed  = 2 
+gridSize = 32
+
 
 orders = ds_list_create();
+
+
 </string>
           </argument>
         </arguments>
@@ -65,36 +70,55 @@ downKey = keyboard_check(vk_down)
 upKey = keyboard_check(vk_up)
 
 
+if(leftKey){
+    ds_list_insert(orders,0,'left')
+}
+if(rightKey){
+    ds_list_insert(orders,0,'right')
+}
+if(downKey){
+    ds_list_insert(orders,0,'down')
+}
+if(upKey){
+    ds_list_insert(orders,0,'up')
+}
 
+
+if(ds_list_size(orders)!=0 and !moving){
+    moving = true
+    dir = orders[| 0]
+    ds_list_delete(orders,0)
+    location = 0
+}
 
 // set direction on keypress
-if(leftKey and !moving){
-    moving = true
-    dir = 'left'
-    location = 0
-}
-if(rightKey and !moving){
-    moving = true
-    dir = 'right'
-    location = 0
-}
-if(upKey and !moving){
-    moving = true
-    dir = 'up'
-    location = 0
-}
-if(downKey and !moving){
-    moving = true
-    dir = 'down'
-    location = 0
-}
+//if(leftKey and !moving){
+//    moving = true
+//    dir = 'left'
+//    location = 0
+//}
+//if(rightKey and !moving){
+//    moving = true
+//    dir = 'right'
+//    location = 0
+//}
+//if(upKey and !moving){
+//    moving = true
+//    dir = 'up'
+//    location = 0
+//}
+//if(downKey and !moving){
+//    moving = true
+//    dir = 'down'
+//    location = 0
+//}
 
 // move according to the key press
 if (moving and dir == 'left'){
     phy_position_x -= walker_speed;
     image_speed= walker_speed/2;
     location += walker_speed;
-    if (location &gt;= 32){
+    if (location &gt;= gridSize){
         moving = false
     }
 }
@@ -102,7 +126,7 @@ if (moving and dir == 'right'){
     phy_position_x += walker_speed;
     image_speed= walker_speed/2;
     location += walker_speed;
-    if (location &gt;= 32){
+    if (location &gt;= gridSize){
         moving = false
     }
 }
@@ -111,7 +135,7 @@ if (moving and dir == 'down'){
     phy_position_y += walker_speed;
     image_speed= walker_speed/2;
     location += walker_speed;
-    if (location &gt;= 32){
+    if (location &gt;= gridSize){
         moving = false
     }
 }
@@ -120,7 +144,7 @@ if (moving and dir == 'up'){
     phy_position_y -= walker_speed;
     image_speed= walker_speed/2;
     location += walker_speed;
-    if (location &gt;= 32){
+    if (location &gt;= gridSize){
         moving = false
     }
 }
