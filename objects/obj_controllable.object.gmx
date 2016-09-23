@@ -33,11 +33,23 @@ image_speed=0
 moving = false
 
 //settings of the walker
-walker_speed  = 2 
+walkerSpeed  = 2 
 gridSize = 32
 
-
+// memory for future movement
 orders = ds_list_create();
+
+// to prevent orders being recorded immediately 
+pauseTimers[3] = -1
+pauseTimers[2] = -1
+pauseTimers[1] = -1
+pauseTimers[0] = -1
+
+
+dirs[3] = 'up'
+dirs[2] = 'down'
+dirs[1] = 'right'
+dirs[0] = 'left'
 
 
 </string>
@@ -69,27 +81,44 @@ rightKey = keyboard_check(vk_right)
 downKey = keyboard_check(vk_down)
 upKey = keyboard_check(vk_up)
 
-
-if(leftKey){
-    ds_list_insert(orders,0,'left')
-}
-if(rightKey){
-    ds_list_insert(orders,0,'right')
-}
-if(downKey){
-    ds_list_insert(orders,0,'down')
-}
-if(upKey){
-    ds_list_insert(orders,0,'up')
-}
+keys[3] = upKey
+keys[2] = downKey
+keys[1] = rightKey
+keys[0] = leftKey
 
 
+// this increments the timers if they are running and resets them
+// when they run for enough time
+for (i = 0; i&lt;4; i+=1){
+    if(pauseTimers[i] &gt;= 0){
+        pauseTimers[i] += 1
+    }
+    if(pauseTimers[i] &gt;= gridSize/walkerSpeed){
+        pauseTimers[i] = -1
+    }
+    
+    if(keys[i]){
+        if(pauseTimers[i]&gt;=0){
+            // if pause timers are running don't do jack shit
+        } else {
+            //if not send the order to move and run the timer
+            pauseTimers[i] = 0
+            ds_list_insert(orders,0,dirs[i]);
+        }
+    }
+}
+
+
+// this starts movement if not already moving and keys are pressed
 if(ds_list_size(orders)!=0 and !moving){
-    moving = true
-    dir = orders[| 0]
-    ds_list_delete(orders,0)
-    location = 0
+    //show_message("starting to move");
+    moving = true;
+    dir = orders[| 0];
+    ds_list_delete(orders,0);
+    location = 0;
 }
+
+
 
 // set direction on keypress
 //if(leftKey and !moving){
@@ -115,36 +144,40 @@ if(ds_list_size(orders)!=0 and !moving){
 
 // move according to the key press
 if (moving and dir == 'left'){
-    phy_position_x -= walker_speed;
-    image_speed= walker_speed/2;
-    location += walker_speed;
+    phy_position_x -= walkerSpeed;
+    image_speed= walkerSpeed/2;
+    location += walkerSpeed;
     if (location &gt;= gridSize){
+        //show_message("stopping movement");
         moving = false
     }
 }
 if (moving and dir == 'right'){
-    phy_position_x += walker_speed;
-    image_speed= walker_speed/2;
-    location += walker_speed;
+    phy_position_x += walkerSpeed;
+    image_speed= walkerSpeed/2;
+    location += walkerSpeed;
     if (location &gt;= gridSize){
+        //show_message("stopping movement");
         moving = false
     }
 }
 
 if (moving and dir == 'down'){
-    phy_position_y += walker_speed;
-    image_speed= walker_speed/2;
-    location += walker_speed;
+    phy_position_y += walkerSpeed;
+    image_speed= walkerSpeed/2;
+    location += walkerSpeed;
     if (location &gt;= gridSize){
+        //show_message("stopping movement");
         moving = false
     }
 }
 
 if (moving and dir == 'up'){
-    phy_position_y -= walker_speed;
-    image_speed= walker_speed/2;
-    location += walker_speed;
+    phy_position_y -= walkerSpeed;
+    image_speed= walkerSpeed/2;
+    location += walkerSpeed;
     if (location &gt;= gridSize){
+        //show_message("stopping movement");
         moving = false
     }
 }
