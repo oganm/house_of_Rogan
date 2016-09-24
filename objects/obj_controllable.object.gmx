@@ -51,6 +51,7 @@ dirs[2] = 'down'
 dirs[1] = 'right'
 dirs[0] = 'left'
 
+facing = 'down'
 
 </string>
           </argument>
@@ -76,10 +77,11 @@ dirs[0] = 'left'
             <kind>1</kind>
             <string>/// handle input logic
 depth = -y;
-leftKey = keyboard_check(vk_left)
-rightKey = keyboard_check(vk_right)
-downKey = keyboard_check(vk_down)
-upKey = keyboard_check(vk_up)
+leftKey = keyboard_check(vk_left);
+rightKey = keyboard_check(vk_right);
+downKey = keyboard_check(vk_down);
+upKey = keyboard_check(vk_up);
+interactKey = keyboard_check(ord("X"));
 
 keys[3] = upKey
 keys[2] = downKey
@@ -118,8 +120,31 @@ if(ds_list_size(orders)!=0 and !moving){
     location = 0;
 }
 
-
-
+// move according to key press
+if (moving){
+    switch (dir){
+        case 'left':
+            phy_position_x -= walkerSpeed;
+            break;
+        case 'right':
+            phy_position_x += walkerSpeed;
+            break;
+        case 'up':
+            phy_position_y -= walkerSpeed;
+            break;
+        case 'down':
+            phy_position_y += walkerSpeed;
+            break;
+    }
+    
+    image_speed= walkerSpeed/2;
+    location += walkerSpeed;
+    if (location &gt;= gridSize){
+        //show_message("stopping movement");
+        moving = false
+    }
+}
+/*
 // move according to the key press
 if (moving and dir == 'left'){
     phy_position_x -= walkerSpeed;
@@ -159,7 +184,7 @@ if (moving and dir == 'up'){
         moving = false
     }
 }
-
+*/
 //if (leftKey){
 //    phy_position_x -= walker_speed;
 //    image_speed= walker_speed/2;
@@ -167,6 +192,12 @@ if (moving and dir == 'up'){
 
 if(!leftKey and !rightKey and !downKey and !upKey and !moving){
     image_speed=0;
+}
+
+// send signal for interaction to the object
+if (interactKey){
+    // see if there are any interactable objects in front of you
+    instance = instance_position(x,y, obj_interactable)
 }
 </string>
           </argument>
