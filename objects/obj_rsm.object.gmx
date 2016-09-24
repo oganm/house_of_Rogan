@@ -42,33 +42,6 @@ switch (dir){
         break;
 }
 
-/*
-leftKey = keyboard_check(vk_left)
-rightKey = keyboard_check(vk_right)
-downKey = keyboard_check(vk_down)
-upKey = keyboard_check(vk_up)
-*/
-
-
-/*
-if (leftKey){
-    sprite_index = spr_rsm_left
-}
-if (rightKey){
-    sprite_index = spr_rsm_right
-}
-if (upKey){
-    sprite_index = spr_rsm_up
-}
-if (downKey){
-    sprite_index = spr_rsm_down
-}
-
-if (!moving and ds_list_size(orders)==0) {
-    image_index = 0
-}
-*/
-
 
 </string>
           </argument>
