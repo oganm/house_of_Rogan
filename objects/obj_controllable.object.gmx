@@ -120,28 +120,6 @@ if(ds_list_size(orders)!=0 and !moving){
 
 
 
-// set direction on keypress
-//if(leftKey and !moving){
-//    moving = true
-//    dir = 'left'
-//    location = 0
-//}
-//if(rightKey and !moving){
-//    moving = true
-//    dir = 'right'
-//    location = 0
-//}
-//if(upKey and !moving){
-//    moving = true
-//    dir = 'up'
-//    location = 0
-//}
-//if(downKey and !moving){
-//    moving = true
-//    dir = 'down'
-//    location = 0
-//}
-
 // move according to the key press
 if (moving and dir == 'left'){
     phy_position_x -= walkerSpeed;
