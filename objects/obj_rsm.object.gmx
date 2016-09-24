@@ -44,6 +44,11 @@ if (downKey){
     sprite_index = spr_rsm_down
 }
 
+if (!moving and ds_list_size(orders)==0) {
+    image_index = 0
+}
+
+
 event_inherited();
 </string>
           </argument>
