@@ -20,6 +20,9 @@
     <background>background\bg_Tileset_Main</background>
   </backgrounds>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\fnt_crux</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_collusion</object>
     <object>objects\obj_controllable</object>
