@@ -51,8 +51,10 @@ dirs[2] = 'down'
 dirs[1] = 'right'
 dirs[0] = 'left'
 
-facing = 'down'
+dir = 'down'
 
+yOfset = -32;
+xOfset = 0;
 </string>
           </argument>
         </arguments>
@@ -122,6 +124,7 @@ if(ds_list_size(orders)!=0 and !moving){
 
 // move according to key press
 if (moving){
+    facing = dir
     switch (dir){
         case 'left':
             phy_position_x -= walkerSpeed;
@@ -144,61 +147,61 @@ if (moving){
         moving = false
     }
 }
-/*
-// move according to the key press
-if (moving and dir == 'left'){
-    phy_position_x -= walkerSpeed;
-    image_speed= walkerSpeed/2;
-    location += walkerSpeed;
-    if (location &gt;= gridSize){
-        //show_message("stopping movement");
-        moving = false
-    }
-}
-if (moving and dir == 'right'){
-    phy_position_x += walkerSpeed;
-    image_speed= walkerSpeed/2;
-    location += walkerSpeed;
-    if (location &gt;= gridSize){
-        //show_message("stopping movement");
-        moving = false
-    }
-}
-
-if (moving and dir == 'down'){
-    phy_position_y += walkerSpeed;
-    image_speed= walkerSpeed/2;
-    location += walkerSpeed;
-    if (location &gt;= gridSize){
-        //show_message("stopping movement");
-        moving = false
-    }
-}
-
-if (moving and dir == 'up'){
-    phy_position_y -= walkerSpeed;
-    image_speed= walkerSpeed/2;
-    location += walkerSpeed;
-    if (location &gt;= gridSize){
-        //show_message("stopping movement");
-        moving = false
-    }
-}
-*/
-//if (leftKey){
-//    phy_position_x -= walker_speed;
-//    image_speed= walker_speed/2;
-//}
 
 if(!leftKey and !rightKey and !downKey and !upKey and !moving){
     image_speed=0;
 }
 
+yOfset = 0;
+xOfset = 0;
+switch (dir){
+    case 'left':
+        xOfset = -gridSize;
+        break;
+    case 'right':
+        xOfset = gridSize;
+        break;
+    case 'up':
+        yOfset = -gridSize;
+        break;
+    case 'down':
+        yOfset = gridSize;
+        break;
+}
+
 // send signal for interaction to the object
 if (interactKey){
-    // see if there are any interactable objects in front of you
-    instance = instance_position(x,y, obj_interactable)
+    // see if there are any interactable objects in front of you and get its insance id
+    instance = instance_position(x+xOfset+gridSize/2,y+yOfset+gridSize/2, obj_interactable)
+    if instance != noone {
+        with (instance){
+            startInteract = true
+        }
+    }
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_interactable">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// collusion with interactables
 </string>
           </argument>
         </arguments>
@@ -222,6 +225,33 @@ if (interactKey){
           <argument>
             <kind>1</kind>
             <string>/// nothing for now
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// debug
+
+draw_self();
+
+draw_circle(x+xOfset+gridSize/2, y+yOfset+gridSize/2, 8, 3)
 </string>
           </argument>
         </arguments>
