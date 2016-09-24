@@ -25,12 +25,32 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>leftKey = keyboard_check(vk_left)
+            <string>event_inherited();
+
+switch (dir){
+    case 'left':
+        sprite_index = spr_rsm_left
+        break;
+    case 'right':
+        sprite_index = spr_rsm_right
+        break;
+    case 'up':
+        sprite_index = spr_rsm_up
+        break;
+    case 'down':
+        sprite_index = spr_rsm_down
+        break;
+}
+
+/*
+leftKey = keyboard_check(vk_left)
 rightKey = keyboard_check(vk_right)
 downKey = keyboard_check(vk_down)
 upKey = keyboard_check(vk_up)
+*/
 
 
+/*
 if (leftKey){
     sprite_index = spr_rsm_left
 }
@@ -47,9 +67,9 @@ if (downKey){
 if (!moving and ds_list_size(orders)==0) {
     image_index = 0
 }
+*/
 
 
-event_inherited();
 </string>
           </argument>
         </arguments>
