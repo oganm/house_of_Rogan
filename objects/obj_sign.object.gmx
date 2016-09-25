@@ -27,8 +27,9 @@
             <kind>1</kind>
             <string>/// Create Event
 event_inherited();
-text = "hey listen!";
-
+text[0] = "hey listen!";
+text[1] = "yo bro!"
+text[2] = '[pause:1]'
 </string>
           </argument>
         </arguments>

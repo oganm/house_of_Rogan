@@ -31,4 +31,4 @@ CTB_Commands[? "speed"] = ctb_cmd_speed;
 CTB_Commands[? "sound"] = ctb_cmd_sound;
 CTB_Commands[? "pause"] = ctb_cmd_pause;
 
-CTB_SkipKey = vk_space;
+CTB_SkipKey = ord("X");

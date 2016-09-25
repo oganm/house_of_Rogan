@@ -72,6 +72,7 @@
         <script>scripts\ctb_cmd_pause.gml</script>
       </scripts>
     </scripts>
+    <script>scripts\scr_text.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_crux</font>
@@ -84,10 +85,12 @@
     <object>objects\obj_rsm</object>
     <object>objects\obj_interactable</object>
     <object>objects\obj_sign</object>
+    <object>objects\obj_textbox_demo</object>
     <object>objects\obj_textbox</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
+    <room>rooms\room1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

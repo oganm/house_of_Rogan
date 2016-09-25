@@ -26,12 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>/// Create Event
-text = "default text";
+text[1] = 'second line'
+text[0] = "default text";
 textShown = false;
 textStep = 1;
 startInteract = false
-
-
 </string>
           </argument>
         </arguments>
@@ -55,7 +54,7 @@ startInteract = false
           <argument>
             <kind>1</kind>
             <string>if (startInteract){
-    show_message(text)
+    scr_text(text)
     startInteract = false
 }
 </string>
