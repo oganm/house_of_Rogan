@@ -30,6 +30,8 @@ text = "default text";
 textShown = false;
 textStep = 1;
 startInteract = false
+
+
 </string>
           </argument>
         </arguments>

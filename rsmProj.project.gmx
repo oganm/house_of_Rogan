@@ -21,6 +21,7 @@
     <background>background\bg_Tileset_Main</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts"/>
   <fonts name="fonts">
     <font>fonts\fnt_crux</font>
   </fonts>
