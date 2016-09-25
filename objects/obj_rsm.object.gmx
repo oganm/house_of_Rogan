@@ -8,7 +8,7 @@
   <parentName>obj_controllable</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="3" enumb="0">
+    <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -26,23 +26,18 @@
           <argument>
             <kind>1</kind>
             <string>event_inherited();
+///sprites
 
-switch (dir){
-    case 'left':
-        sprite_index = spr_rsm_left
-        break;
-    case 'right':
-        sprite_index = spr_rsm_right
-        break;
-    case 'up':
-        sprite_index = spr_rsm_up
-        break;
-    case 'down':
-        sprite_index = spr_rsm_down
-        break;
-}
+downSprite = spr_rsm_down
+upSprite = spr_rsm_up
+leftSprite = spr_rsm_left
+rightSprite = spr_rsm_right
 
-
+// in case I change the system later
+sprites[3] = upSprite
+sprites[2] = downSprite
+sprites[1] = rightSprite
+sprites[0] = leftSprite
 </string>
           </argument>
         </arguments>

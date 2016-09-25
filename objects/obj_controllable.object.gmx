@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///fix rotation and set fixed speed to 0
+            <string>///starting variables 
 
 phy_fixed_rotation = true
 image_speed=0
@@ -55,6 +55,11 @@ dir = 'down'
 
 yOfset = -32;
 xOfset = 0;
+
+downSprite = spr_controllable
+upSprite = spr_controllable
+leftSprite = spr_controllable
+rightSprite = spr_controllable
 </string>
           </argument>
         </arguments>
@@ -128,15 +133,19 @@ if (moving){
     switch (dir){
         case 'left':
             phy_position_x -= walkerSpeed;
+            sprite_index = leftSprite;
             break;
         case 'right':
             phy_position_x += walkerSpeed;
+            sprite_index = rightSprite;
             break;
         case 'up':
             phy_position_y -= walkerSpeed;
+            sprite_index = upSprite
             break;
         case 'down':
             phy_position_y += walkerSpeed;
+            sprite_index = downSprite
             break;
     }
     
