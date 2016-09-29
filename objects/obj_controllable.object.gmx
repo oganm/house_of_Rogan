@@ -4,7 +4,7 @@
   <solid>-1</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///starting variables 
+global.teleport_goingTo = noone
 
 phy_fixed_rotation = true
 image_speed=0

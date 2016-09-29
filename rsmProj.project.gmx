@@ -10,6 +10,8 @@
     <sound>sound\snd_gun</sound>
   </sounds>
   <sprites name="sprites">
+    <sprite>sprites\spr_teleport</sprite>
+    <sprite>sprites\spr_exit</sprite>
     <sprite>sprites\spr_collusion</sprite>
     <sprite>sprites\spr_controllable</sprite>
     <sprite>sprites\spr_interactable</sprite>
@@ -34,6 +36,9 @@
   </sprites>
   <backgrounds name="background">
     <background>background\bg_Tileset_Main</background>
+    <background>background\bg_rpg_modern</background>
+    <background>background\bg_more_modern</background>
+    <background>background\background3</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -83,14 +88,28 @@
     <object>objects\obj_collusion</object>
     <object>objects\obj_controllable</object>
     <object>objects\obj_rsm</object>
-    <object>objects\obj_interactable</object>
-    <object>objects\obj_sign</object>
-    <object>objects\obj_textbox_demo</object>
-    <object>objects\obj_textbox</object>
+    <objects name="interactables">
+      <object>objects\obj_interactable</object>
+      <object>objects\obj_sign</object>
+    </objects>
+    <objects name="textbox">
+      <object>objects\obj_textbox</object>
+      <object>objects\obj_textbox_demo</object>
+    </objects>
+    <objects name="teleporting">
+      <object>objects\obj_teleporter</object>
+      <object>objects\obj_exit</object>
+      <objects name="gardenToLivingRoom">
+        <object>objects\obj_ext_livingRoomToGardenExit</object>
+        <object>objects\obj_ext_gardenToLivingRoomExit</object>
+        <object>objects\obj_tlp_livingRoomToGarden</object>
+        <object>objects\obj_tlp_gardenToLivingRoom</object>
+      </objects>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_livingRoom</room>
     <room>rooms\room0</room>
-    <room>rooms\rm_smurfHouse</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

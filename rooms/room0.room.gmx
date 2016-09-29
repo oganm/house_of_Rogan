@@ -64,9 +64,13 @@ text[1] = 'listen'
     <instance objName="obj_collusion" x="96" y="96" name="inst_CBE40F4B" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collusion" x="32" y="160" name="inst_F3A7FA41" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collusion" x="96" y="96" name="inst_551063AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_rsm" x="64" y="64" name="inst_FCCD3DE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_interactable" x="224" y="32" name="inst_27925223" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sign" x="224" y="128" name="inst_5C85C59D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collusion" x="32" y="288" name="inst_1CB68477" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collusion" x="96" y="288" name="inst_0B8C6811" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collusion" x="64" y="320" name="inst_49B4CF84" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ext_livingRoomToGardenExit" x="64" y="256" name="inst_8A97AA63" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tlp_gardenToLivingRoom" x="64" y="288" name="inst_00592E98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_Tileset_Main" x="32" y="32" w="32" h="32" xo="16" yo="528" id="10000002" name="inst_CDAB25D4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
