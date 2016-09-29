@@ -115,7 +115,8 @@ for (i = 0; i &lt; array_length_1d(global.text); i += 1){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ctb_draw();
+            <string>depth = -90000
+ctb_draw();
 draw_sprite( char_sprite, 0, x+6, y+6 );
 </string>
           </argument>
