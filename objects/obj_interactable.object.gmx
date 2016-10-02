@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>/// Create Event
-text[1] = 'second line'
 text[0] = "default text";
+sprite = spr_rsm_face
 textShown = false;
 textStep = 1;
 startInteract = false
@@ -54,7 +54,7 @@ startInteract = false
           <argument>
             <kind>1</kind>
             <string>if (startInteract){
-    scr_text(text)
+    scr_text(text,sprite)
     startInteract = false
 }
 </string>

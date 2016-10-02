@@ -56,7 +56,7 @@ ctb_add_font( "other", f_other );
 ctb_add_sound( "gun", snd_gun );
 
 // Add a custom command to change character image!
-char_sprite = spr_rsm_face;
+char_sprite = global.textSprite;
 ctb_add_command( "char", command_char );
 
 // Set the padding of the textbox
