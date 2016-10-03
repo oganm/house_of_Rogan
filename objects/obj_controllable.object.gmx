@@ -86,142 +86,121 @@ skipInteractionTimer = -1
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>601</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>/// handle input logic
-depth = -y;
-leftKey = keyboard_check(vk_left);
-rightKey = keyboard_check(vk_right);
-downKey = keyboard_check(vk_down);
-upKey = keyboard_check(vk_up);
-interactKey = keyboard_check(ord("X"));
-
-keys[3] = upKey
-keys[2] = downKey
-keys[1] = rightKey
-keys[0] = leftKey
-
-
-// this increments the timers if they are running and resets them
-// when they run for enough time
-for (i = 0; i&lt;4; i+=1){
-    if(pauseTimers[i] &gt;= 0){
-        pauseTimers[i] += 1
-    }
-    if(pauseTimers[i] &gt;= gridSize/walkerSpeed){
-        pauseTimers[i] = -1
-    }
-    
-    if(keys[i]){
-        if(pauseTimers[i]&gt;=0){
-            // if pause timers are running don't do jack shit
-        } else {
-            //if not send the order to move and run the timer
-            pauseTimers[i] = 0
-            ds_list_insert(orders,0,i);
-        }
-    }
-}
-
-
-// this starts movement if not already moving and keys are pressed
-if(ds_list_size(orders)!=0 and !moving){
-    //show_message("starting to move");
-    moving = true;
-    dir = orders[| 0];
-    ds_list_delete(orders,0);
-    location = 0;
-}
-
-// move according to key press
-if (moving){
-    sprite_index = sprites[dir]
-    switch (dir){
-        case 0:
-            phy_position_x -= walkerSpeed;
-            sprite_index = leftSprite;
-            break;
-        case 1:
-            phy_position_x += walkerSpeed;
-            sprite_index = rightSprite;
-            break;
-        case 3:
-            phy_position_y -= walkerSpeed;
-            sprite_index = upSprite
-            break;
-        case 2:
-            phy_position_y += walkerSpeed;
-            sprite_index = downSprite
-            break;
-    }
-    
-    image_speed= animationSpeed;
-    location += walkerSpeed;
-    if (location &gt;= gridSize){
-        //show_message("stopping movement");
-        moving = false
-    }
-}
-
-if(!leftKey and !rightKey and !downKey and !upKey and !moving){
-    image_speed=0;
-    image_index = 0
-}
-
-yOfset = 0;
-xOfset = 0;
-switch (dir){
-    case 0:
-        xOfset = -gridSize;
-        break;
-    case 1:
-        xOfset = gridSize;
-        break;
-    case 3:
-        yOfset = -gridSize;
-        break;
-    case 2:
-        yOfset = gridSize;
-        break;
-}
-
-// send signal for interaction to the object
-if (interactKey and !instance_exists(obj_textbox)){
-    // see if there are any interactable objects in front of you and get its insance id
-    instance = instance_position(x+xOfset+gridSize/2,y+yOfset+gridSize/2, obj_interactable)
-    if instance != noone {
-        if (!skipInteraction){
-            skipInteraction = true
-            with (instance){
-                startInteract = true
-            }
-        } else {
-            skipInteractionTimer = 0
-        }
-    }
-}
-
-if(skipInteractionTimer &gt;= 0){
-    skipInteractionTimer += 1
-}
-
-if(skipInteractionTimer &gt;= 10){
-    skipInteraction = false
-    skipInteractionTimer = -1
-}
-</string>
+            <kind>9</kind>
+            <script>scr_movementStep</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>601</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>9</kind>
+            <script>scr_yDepth</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>601</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>9</kind>
+            <script>scr_interactionSignal</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
