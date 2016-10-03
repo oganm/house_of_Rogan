@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>/// Create Event
+depth = global.DebugDepth
 text[0] = "default text";
 sprite = spr_rsm_face
 textShown = false;

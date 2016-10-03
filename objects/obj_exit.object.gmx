@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(is_undefined(global.teleport_goingTo)){
+            <string>depth = global.DebugDepth
+if(is_undefined(global.teleport_goingTo)){
     exit
 }
 if(global.teleport_goingTo == object_index){

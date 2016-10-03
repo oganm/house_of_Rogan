@@ -33,6 +33,11 @@ upSprite = spr_rsm_up
 leftSprite = spr_rsm_left
 rightSprite = spr_rsm_right
 
+downStop = spr_rsm_down
+upStop = spr_rsm_up
+leftStop = spr_rsm_left
+rightStop = spr_rsm_right
+
 // in case I change the system later
 sprites[3] = upSprite
 sprites[2] = downSprite
