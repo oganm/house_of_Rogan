@@ -21,6 +21,10 @@
       <sprite>sprites\spr_rsm_up</sprite>
       <sprite>sprites\spr_rsm_right</sprite>
       <sprite>sprites\spr_rsm_face</sprite>
+      <sprite>sprites\spr_rsmr_down</sprite>
+      <sprite>sprites\spr_rsmr_left</sprite>
+      <sprite>sprites\spr_rsmr_up</sprite>
+      <sprite>sprites\spr_rsmr_right</sprite>
     </sprites>
     <sprites name="textboxSprites">
       <sprite>sprites\spr_textbox_normal</sprite>
@@ -33,51 +37,87 @@
       <sprite>sprites\spr_ico_continue</sprite>
       <sprite>sprites\spr_ico_continue_small</sprite>
     </sprites>
+    <sprites name="cats">
+      <sprites name="white cat">
+        <sprite>sprites\spr_w_cat_up</sprite>
+        <sprite>sprites\spr_w_cat_right</sprite>
+        <sprite>sprites\spr_w_cat_left</sprite>
+        <sprite>sprites\spr_w_cat_down</sprite>
+      </sprites>
+      <sprites name="black cat">
+        <sprite>sprites\spr_b_cat_down</sprite>
+        <sprite>sprites\spr_b_cat_right</sprite>
+        <sprite>sprites\spr_b_cat_left</sprite>
+        <sprite>sprites\spr_b_cat_up</sprite>
+      </sprites>
+      <sprites name="yellow cat">
+        <sprite>sprites\spr_y_cat_down</sprite>
+        <sprite>sprites\spr_y_cat_left</sprite>
+        <sprite>sprites\spr_y_cat_right</sprite>
+        <sprite>sprites\spr_y_cat_up</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="Star Trek">
+      <sprite>sprites\spr_sisko</sprite>
+      <sprite>sprites\spr_picard</sprite>
+      <sprite>sprites\spr_bashir</sprite>
+      <sprite>sprites\spr_garak</sprite>
+      <sprite>sprites\spr_odo</sprite>
+      <sprite>sprites\spr_quark</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_Tileset_Main</background>
     <background>background\bg_rpg_modern</background>
     <background>background\bg_more_modern</background>
     <background>background\background3</background>
+    <background>background\couch</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <scripts name="CTB - Ced's Textbox">
-      <script>scripts\ctb_init.gml</script>
-      <scripts name="SpriteLoaders">
-        <script>scripts\ctb_load_normal.gml</script>
-        <script>scripts\ctb_load_subimage.gml</script>
-        <script>scripts\ctb_load_slice9.gml</script>
-      </scripts>
-      <scripts name="Database">
-        <script>scripts\ctb_add_color.gml</script>
-        <script>scripts\ctb_add_font.gml</script>
-        <script>scripts\ctb_add_sound.gml</script>
-        <script>scripts\ctb_add_command.gml</script>
-      </scripts>
-      <scripts name="CORE">
-        <script>scripts\ctb_create.gml</script>
-        <script>scripts\command_char.gml</script>
-        <script>scripts\ctb_add_text.gml</script>
-        <script>scripts\ctb_set_key.gml</script>
-        <script>scripts\ctb_update.gml</script>
-        <script>scripts\ctb_draw.gml</script>
-        <script>scripts\ctb_set_padding.gml</script>
-      </scripts>
-      <scripts name="Parsing">
-        <script>scripts\ctb_parse_text.gml</script>
-        <script>scripts\_ctb_create_tag.gml</script>
-        <script>scripts\_ctb_create_word.gml</script>
-        <script>scripts\_ctb_build_word_list.gml</script>
-        <script>scripts\_ctb_word_to_message.gml</script>
-      </scripts>
-      <scripts name="Commands">
-        <script>scripts\ctb_cmd_speed.gml</script>
-        <script>scripts\ctb_cmd_sound.gml</script>
-        <script>scripts\ctb_cmd_pause.gml</script>
-      </scripts>
+    <scripts name="Code for controllable object">
+      <script>scripts\scr_yDepth.gml</script>
+      <script>scripts\scr_movementStep.gml</script>
+      <script>scripts\scr_interactionSignal.gml</script>
     </scripts>
-    <script>scripts\scr_text.gml</script>
+    <scripts name="Textbox scripts">
+      <scripts name="CTB - Ced's Textbox">
+        <script>scripts\ctb_init.gml</script>
+        <scripts name="SpriteLoaders">
+          <script>scripts\ctb_load_normal.gml</script>
+          <script>scripts\ctb_load_subimage.gml</script>
+          <script>scripts\ctb_load_slice9.gml</script>
+        </scripts>
+        <scripts name="Database">
+          <script>scripts\ctb_add_color.gml</script>
+          <script>scripts\ctb_add_font.gml</script>
+          <script>scripts\ctb_add_sound.gml</script>
+          <script>scripts\ctb_add_command.gml</script>
+        </scripts>
+        <scripts name="CORE">
+          <script>scripts\ctb_create.gml</script>
+          <script>scripts\command_char.gml</script>
+          <script>scripts\ctb_add_text.gml</script>
+          <script>scripts\ctb_set_key.gml</script>
+          <script>scripts\ctb_update.gml</script>
+          <script>scripts\ctb_draw.gml</script>
+          <script>scripts\ctb_set_padding.gml</script>
+        </scripts>
+        <scripts name="Parsing">
+          <script>scripts\ctb_parse_text.gml</script>
+          <script>scripts\_ctb_create_tag.gml</script>
+          <script>scripts\_ctb_create_word.gml</script>
+          <script>scripts\_ctb_build_word_list.gml</script>
+          <script>scripts\_ctb_word_to_message.gml</script>
+        </scripts>
+        <scripts name="Commands">
+          <script>scripts\ctb_cmd_speed.gml</script>
+          <script>scripts\ctb_cmd_sound.gml</script>
+          <script>scripts\ctb_cmd_pause.gml</script>
+        </scripts>
+      </scripts>
+      <script>scripts\scr_text.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_crux</font>
@@ -86,11 +126,20 @@
   </fonts>
   <objects name="objects">
     <object>objects\obj_collusion</object>
+    <object>objects\obj_follower</object>
     <object>objects\obj_controllable</object>
     <object>objects\obj_rsm</object>
     <objects name="interactables">
       <object>objects\obj_interactable</object>
-      <object>objects\obj_sign</object>
+      <object>objects\obj_interactableRandom</object>
+      <objects name="LivingRoom">
+        <object>objects\obj_TV</object>
+        <object>objects\obj_pillow</object>
+        <object>objects\obj_b_cat</object>
+      </objects>
+      <objects name="Garden">
+        <object>objects\obj_sign</object>
+      </objects>
     </objects>
     <objects name="textbox">
       <object>objects\obj_textbox</object>
@@ -108,6 +157,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_startup</room>
     <room>rooms\rm_livingRoom</room>
     <room>rooms\room0</room>
   </rooms>

@@ -72,6 +72,7 @@ if (moving){
 }
 // stop if not pressing a key
 if(!leftKey and !rightKey and !downKey and !upKey and !moving){
+    //sprite_index = stopSprites[dir]
     image_speed=0;
-    image_index = 0
+    image_index = 0;
 }

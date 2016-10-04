@@ -47,13 +47,13 @@ pauseTimers[2] = -1
 pauseTimers[1] = -1
 pauseTimers[0] = -1
 
+// not needed anymore
+//dirs[3] = 'up'
+//dirs[2] = 'down'
+//dirs[1] = 'right'
+//dirs[0] = 'left'
 
-dirs[3] = 'up'
-dirs[2] = 'down'
-dirs[1] = 'right'
-dirs[0] = 'left'
-
-dir = 'down'
+dir = 2
 
 yOfset = -32;
 xOfset = 0;
@@ -63,18 +63,22 @@ upSprite = spr_controllable
 leftSprite = spr_controllable
 rightSprite = spr_controllable
 
-// in case I change the system later
 sprites[3] = upSprite
 sprites[2] = downSprite
 sprites[1] = rightSprite
 sprites[0] = leftSprite
 
+/*
 downStop = spr_controllable
 upStop = spr_controllable
 leftStop = spr_controllable
 rightStop=  spr_controllable
 
-
+stopSprites[3] = upStop
+stopSprites[2] = downStop
+stopSprites[1] = rightStop
+stopSprites[0] = leftStop
+*/
 
 skipInteraction = false
 skipInteractionTimer = -1

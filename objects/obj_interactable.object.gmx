@@ -27,11 +27,9 @@
             <kind>1</kind>
             <string>/// Create Event
 depth = global.DebugDepth
-text[0] = "default text";
+
 sprite = spr_rsm_face
-textShown = false;
-textStep = 1;
-startInteract = false
+text[0] = 'test'
 </string>
           </argument>
         </arguments>
@@ -54,7 +52,8 @@ startInteract = false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (startInteract){
+            <string>///start interaction if signal received from a controllable
+if (startInteract){
     scr_text(text,sprite)
     startInteract = false
 }

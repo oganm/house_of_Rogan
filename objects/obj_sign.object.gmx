@@ -29,7 +29,6 @@
 event_inherited();
 text[0] = "hey listen!";
 text[1] = "yo bro!"
-text[2] = '[pause:1]'
 </string>
           </argument>
         </arguments>
