@@ -115,9 +115,9 @@ if (moving){
     }
 }
 
-if(!moving){
+if(!moving and ds_list_size(orders)=0){
     //sprite_index = stopSprites[dir]
-    image_speed=0;
+    image_speed = 0;
     image_index = 0;
 }
 </string>
