@@ -125,6 +125,7 @@
     <font>fonts\f_other</font>
   </fonts>
   <objects name="objects">
+    <object>objects\obj_gridMover</object>
     <object>objects\obj_collusion</object>
     <object>objects\obj_follower</object>
     <object>objects\obj_controllable</object>
