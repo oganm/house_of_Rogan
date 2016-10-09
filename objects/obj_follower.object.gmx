@@ -27,7 +27,6 @@
             <kind>1</kind>
             <string>event_inherited()
 following = obj_rsm
-checking = false
 
 
 </string>
@@ -58,24 +57,9 @@ if (!following.moving){
 }
 
 
-// check to see if the object moved
-
-
 // record the coordinates of the object that you're following
 if(following.moving and !moving and !checking){
-    checkX = floor(following.phy_position_x)
-    checkY = floor(following.phy_position_y)
-    checking = true
     ds_list_insert(orders,0,toGoDir)  
-}
-
-if (checking){
-    checking = false
-    xMove = checkX != floor(following.phy_position_x)
-    yMove = checkY != floor(following.phy_position_y)
-    if(xMove | yMove){
-        ds_list_insert(orders,0,toGoDir)  
-    }
 }
 
 </string>
