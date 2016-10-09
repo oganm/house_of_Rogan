@@ -30,7 +30,7 @@ event_inherited()
 
 destObj = obj_ext_livingRoomToGardenExit
 destRoom = room0
-dir = 'down'
+dir = 2
 
 
 </string>

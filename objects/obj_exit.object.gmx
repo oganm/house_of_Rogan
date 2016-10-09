@@ -34,21 +34,10 @@ if(global.teleport_goingTo == object_index){
     global.teleport_movingObject.phy_position_y = phy_position_y
     
     global.teleport_movingObject.dir = global.teleport_direction
-
-    switch (global.teleport_direction) {
-        case 'left':
-            global.teleport_movingObject.sprite_index = global.teleport_movingObject.leftSprite;
-            break;
-        case 'right':
-            global.teleport_movingObject.sprite_index = global.teleport_movingObject.rightSprite;
-            break;
-        case 'up':
-            global.teleport_movingObject.sprite_index = global.teleport_movingObject.upSprite
-            break;
-        case 'down':
-            global.teleport_movingObject.sprite_index = global.teleport_movingObject.downSprite
-            break;
-    }
+    
+    global.teleport_movingObject.sprite_index = global.teleport_movingObject.sprites[global.teleport_direction]
+    global.teleport_movingObject.dir = global.teleport_direction
+     
     
 }
 </string>

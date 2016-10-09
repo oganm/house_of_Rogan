@@ -29,7 +29,7 @@
 depth = global.DebugDepth
 destObj = obj_exit
 destRoom = room0
-dir = 'down'
+dir = 2
 
 
 porting = false
