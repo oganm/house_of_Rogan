@@ -58,7 +58,7 @@ if (!following.moving){
 
 
 // record the coordinates of the object that you're following
-if(following.moving and !moving and !checking){
+if(following.moving and !moving){
     ds_list_insert(orders,0,toGoDir)  
 }
 
