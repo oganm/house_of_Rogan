@@ -115,6 +115,7 @@ if (moving){
     }
 }
 
+// only stop animation if there are no orders to excecute later
 if(!moving and ds_list_size(orders)=0){
     //sprite_index = stopSprites[dir]
     image_speed = 0;
