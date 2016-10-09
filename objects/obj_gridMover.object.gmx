@@ -30,8 +30,10 @@
 moving = false
 phy_fixed_rotation = true
 image_speed=0
-gridSize = 32
-
+gridSize = global.gridSize
+// used by teleporters to transport the follower with the controllable
+//sadly, chaining followers isn't really possible
+follower = noone
 // memory for future movement
 //if has directions in they will be read one by one and excecuted
 orders = ds_list_create();
