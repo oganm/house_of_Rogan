@@ -28,7 +28,7 @@
             <string>event_inherited();
 ///sprites
 
-animationSpeed = walkerSpeed/15
+animationSpeed = 0.25
 
 downSprite = spr_rsmr_down
 upSprite = spr_rsmr_up
