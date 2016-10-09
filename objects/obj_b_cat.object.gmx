@@ -29,16 +29,20 @@
 event_inherited();
 depth = -y;
 image_speed = 0
-text[0] = "Meow!"
 scratchTimer = -1
-scratchDuration = 60
+scratchDuration = 60*3
 
+text[0] = "Meow!"
 textRandom[0] = text
 spriteRandom[0] = spr_b_cat_down
+text = 0
+
 
 text[0] = "Scratch scratch scratch!"
 textRandom[1] = text
 spriteRandom[1] = spr_b_cat_down
+
+
 </string>
           </argument>
         </arguments>
@@ -69,10 +73,10 @@ if (choice == 1){
 
 if(scratchTimer&gt;= 0){
     scratchTimer += 1
+    choice = -1
     if (scratchTimer &gt;= scratchDuration){
         scratchTimer = -1
         image_speed = 0
-        choice = -1
     }
 }
 </string>

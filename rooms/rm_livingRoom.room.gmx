@@ -160,6 +160,7 @@
     <tile bgName="bg_Tileset_Main" x="384" y="384" w="16" h="32" xo="816" yo="1456" id="10000540" name="inst_049A346B" depth="800000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_Tileset_Main" x="384" y="256" w="16" h="32" xo="816" yo="1456" id="10000541" name="inst_DCD35CB1" depth="800000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_more_modern" x="475" y="228" w="41" h="35" xo="319" yo="193" id="10000613" name="inst_FF5E9B73" depth="800000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_Tileset_Main" x="454" y="351" w="32" h="32" xo="672" yo="1568" id="10000664" name="inst_BB82AD2E" depth="800000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>-1</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

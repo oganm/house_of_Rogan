@@ -28,7 +28,7 @@
             <string>/// Create Event
 event_inherited();
 text[0] = "hey listen!";
-text[1] = "yo bro!"
+text[1] = "yo bro! [sound:gun]"
 </string>
           </argument>
         </arguments>
