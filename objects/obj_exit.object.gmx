@@ -29,7 +29,7 @@
 if(is_undefined(global.teleport_goingTo)){
     exit
 }
-//show_message(is_undefined(global.teleport_goingTo))
+
 if(global.teleport_goingTo == object_index){
     global.teleport_movingObject.phy_position_x = phy_position_x
     global.teleport_movingObject.phy_position_y = phy_position_y
@@ -38,7 +38,7 @@ if(global.teleport_goingTo == object_index){
     
     global.teleport_movingObject.sprite_index = global.teleport_movingObject.sprites[global.teleport_direction]
     global.teleport_movingObject.dir = global.teleport_direction
-    
+     global.teleport_movingObject.phy_fixed_rotation = true
     //if a follower exists, place it behind the controllable
     if(global.teleport_movingObject.follower != noone){
         yOfset = 0;
@@ -60,7 +60,8 @@ if(global.teleport_goingTo == object_index){
                 break;
         }
         follower.phy_position_x = phy_position_x + xOfset
-        follower.phy_position_y = phy_position_y + yOfset   
+        follower.phy_position_y = phy_position_y + yOfset
+        follower.phy_fixed_rotation = true
     }
 }
 
