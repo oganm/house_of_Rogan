@@ -75,11 +75,6 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <scripts name="Code for controllable object">
-      <script>scripts\scr_yDepth.gml</script>
-      <script>scripts\scr_movementStep.gml</script>
-      <script>scripts\scr_interactionSignal.gml</script>
-    </scripts>
     <scripts name="Textbox scripts">
       <scripts name="CTB - Ced's Textbox">
         <script>scripts\ctb_init.gml</script>
