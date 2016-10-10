@@ -112,7 +112,8 @@ if (moving){
     location += walkerSpeed;
     if (location &gt;= gridSize){
         //show_message("stopping movement");
-        move_snap(32, 32)
+        //this doesnt work for some reason
+        move_snap(global.gridSize, global.gridSize)
         moving = false
     }
 }

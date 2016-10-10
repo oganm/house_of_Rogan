@@ -22,9 +22,13 @@
       <sprite>sprites\spr_rsm_right</sprite>
       <sprite>sprites\spr_rsm_face</sprite>
       <sprite>sprites\spr_rsmr_down</sprite>
+      <sprite>sprites\spr_rsmr_down_lying_left</sprite>
       <sprite>sprites\spr_rsmr_left</sprite>
+      <sprite>sprites\spr_rsmr_left_lying_left</sprite>
       <sprite>sprites\spr_rsmr_up</sprite>
+      <sprite>sprites\spr_rsmr_up_lying_left</sprite>
       <sprite>sprites\spr_rsmr_right</sprite>
+      <sprite>sprites\spr_rsmr_right_lying_left</sprite>
     </sprites>
     <sprites name="textboxSprites">
       <sprite>sprites\spr_textbox_normal</sprite>
@@ -68,8 +72,19 @@
     <sprites name="objects">
       <sprite>sprites\spr_flowerPot</sprite>
       <sprite>sprites\spr_chairBack</sprite>
+      <sprite>sprites\spr_rose</sprite>
+      <sprite>sprites\spr_dispatcher</sprite>
+      <sprite>sprites\spr_bed</sprite>
+      <sprite>sprites\spr_bedSheet</sprite>
+      <sprite>sprites\spr_floor</sprite>
+      <sprite>sprites\spr_flame</sprite>
     </sprites>
-    <sprite>sprites\spr_dispatcher</sprite>
+    <sprites name="ogan">
+      <sprite>sprites\spr_ogan_down</sprite>
+      <sprite>sprites\spr_ogan_left</sprite>
+      <sprite>sprites\spr_ogan_right</sprite>
+      <sprite>sprites\spr_ogan_up</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_Tileset_Main</background>
@@ -155,6 +170,16 @@
         <object>objects\obj_chairBack</object>
         <object>objects\obj_flower</object>
         <object>objects\obj_dispatcher</object>
+        <object>objects\obj_rose</object>
+      </objects>
+      <objects name="ogan">
+        <object>objects\obj_bed</object>
+        <object>objects\obj_sheet</object>
+        <object>objects\obj_wakeRsmUp</object>
+        <object>objects\obj_hat</object>
+        <object>objects\obj_oganTrigger</object>
+        <object>objects\obj_flame</object>
+        <object>objects\obj_sleepingOgan</object>
       </objects>
     </objects>
     <objects name="textbox">
