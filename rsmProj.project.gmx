@@ -69,6 +69,7 @@
       <sprite>sprites\spr_flowerPot</sprite>
       <sprite>sprites\spr_chairBack</sprite>
     </sprites>
+    <sprite>sprites\spr_dispatcher</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_Tileset_Main</background>
@@ -146,11 +147,13 @@
       </objects>
       <objects name="Kitchen">
         <object>objects\obj_flower_interactionBox</object>
+        <object>objects\obj_dishwasher</object>
         <object>objects\obj_hiddenCat</object>
         <object>objects\obj_kale</object>
         <object>objects\obj_frigde</object>
         <object>objects\obj_chairBack</object>
         <object>objects\obj_flower</object>
+        <object>objects\obj_dispatcher</object>
       </objects>
     </objects>
     <objects name="textbox">
