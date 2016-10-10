@@ -193,6 +193,7 @@
     <room>rooms\rm_livingRoom</room>
     <room>rooms\room0</room>
     <room>rooms\rm_kitchen</room>
+    <room>rooms\room4</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
