@@ -77,7 +77,6 @@ animationSpeed = walkerSpeed/2
           <argument>
             <kind>1</kind>
             <string>/// move on new order
-
 if(ds_list_size(orders)!=0 and !moving){
     //show_message("starting to move");
     moving = true;
@@ -88,6 +87,7 @@ if(ds_list_size(orders)!=0 and !moving){
 
 // move according to the ordered direction
 if (moving){
+    phy_fixed_rotation = true
     sprite_index = sprites[dir]
     switch (dir){
         case 0:
