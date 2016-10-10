@@ -34,6 +34,10 @@ if(!global.yellowCat){
 
 text[0] = "A hidden cat! Must have followed you!";
 
+smokeTimer = 0
+smokeInterval[0] = 60*3
+smokeInterval[1] = 60*5
+smokeLimit = 120
 </string>
           </argument>
         </arguments>
@@ -57,6 +61,16 @@ text[0] = "A hidden cat! Must have followed you!";
           <argument>
             <kind>1</kind>
             <string>event_inherited();
+
+smokeTimer +=1
+
+if(smokeTimer &gt;= smokeLimit){
+    smokeLimit = smokeInterval[0] + floor(random(smokeInterval[1] - smokeInterval[0]))
+    smokeTimer = 0
+    effect_create_above(ef_smoke, x+global.gridSize, y+global.gridSize/2+random(global.gridSize/3), 0, c_black);
+}
+
+
 
 if (interactTrigger){
     global.yellowCat = false
