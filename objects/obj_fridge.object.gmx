@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>obj_interactable</parentName>
+  <parentName>obj_interactableRandom</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -27,8 +27,27 @@
             <kind>1</kind>
             <string>/// Create Event
 event_inherited();
+//delete textRandom from the parent
+textRandom = 0;
+text = 0
+
 text[0] = "No coke left :(";
 
+textRandom[0] = text
+spriteRandom[0] = spr_rsmr_down
+text = 0
+
+
+text[0] = "Neatly wrapped butter aliquots";
+textRandom[1] = text
+spriteRandom[1] = spr_rsmr_down
+text = 0
+
+
+text[0] = "Rice from yesterday";
+textRandom[2] = text
+spriteRandom[2] = spr_rsmr_down
+text = 0
 </string>
           </argument>
         </arguments>

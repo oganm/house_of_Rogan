@@ -70,7 +70,6 @@
     <instance objName="obj_collusion" x="288" y="352" name="inst_30F9F1F2" locked="0" code="" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
     <instance objName="obj_collusion" x="384" y="352" name="inst_5AFF5AD2" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_kale" x="416" y="416" name="inst_387E7AFD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_frigde" x="320" y="448" name="inst_C445F42F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hiddenCat" x="320" y="416" name="inst_953CFB5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dispatcher" x="393" y="432" name="inst_43996EC8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dishwasher" x="384" y="416" name="inst_8A484793" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -84,6 +83,7 @@
     <instance objName="obj_ext_oganToKitchen" x="320" y="192" name="inst_73DED132" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ext_rsmToKitchen" x="384" y="192" name="inst_BF44822C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ext_wcToKitchen" x="320" y="320" name="inst_9016FC56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_fridge" x="320" y="448" name="inst_A3859447" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_Tileset_Main" x="320" y="544" w="32" h="32" xo="0" yo="128" id="10000678" name="inst_74A17769" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
