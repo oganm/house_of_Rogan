@@ -69,9 +69,11 @@
     <instance objName="obj_collusion" x="320" y="128" name="inst_D6D7A8D8" locked="0" code="" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
     <instance objName="obj_collusion" x="128" y="128" name="inst_30F9F1F2" locked="0" code="" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
     <instance objName="obj_collusion" x="224" y="128" name="inst_5AFF5AD2" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="obj_kale" x="288" y="192" name="inst_387E7AFD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_kale" x="256" y="192" name="inst_387E7AFD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_frigde" x="160" y="224" name="inst_C445F42F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hiddenCat" x="160" y="192" name="inst_953CFB5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dispatcher" x="232" y="208" name="inst_43996EC8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dishwasher" x="224" y="192" name="inst_8A484793" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_Tileset_Main" x="160" y="320" w="32" h="32" xo="0" yo="128" id="10000678" name="inst_74A17769" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -93,7 +95,6 @@
     <tile bgName="bg_Tileset_Main" x="224" y="224" w="32" h="32" xo="0" yo="128" id="10000695" name="inst_AEA18B40" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_Tileset_Main" x="256" y="224" w="32" h="32" xo="0" yo="128" id="10000696" name="inst_5CABC1E6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_Tileset_Main" x="288" y="224" w="32" h="32" xo="0" yo="128" id="10000697" name="inst_D8619385" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_Tileset_Main" x="160" y="192" w="32" h="32" xo="0" yo="128" id="10000698" name="inst_4020DFF6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_Tileset_Main" x="192" y="192" w="32" h="32" xo="0" yo="128" id="10000699" name="inst_C84CB39C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_Tileset_Main" x="256" y="192" w="32" h="32" xo="0" yo="128" id="10000708" name="inst_C1FF1C10" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_Tileset_Main" x="224" y="192" w="32" h="32" xo="0" yo="128" id="10000712" name="inst_F6EB661D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -134,7 +135,9 @@
     <tile bgName="bg_Tileset_Main" x="254" y="267" w="32" h="32" xo="640" yo="1632" id="10000735" name="inst_A6C0B7BE" depth="800000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_Tileset_Main" x="286" y="267" w="32" h="32" xo="640" yo="1632" id="10000736" name="inst_B4C89FF7" depth="800000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_more_modern" x="160" y="192" w="32" h="64" xo="320" yo="352" id="10000763" name="inst_F225D044" depth="800000" locked="0" colour="4290822336" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_more_modern" x="224" y="168" w="96" h="64" xo="416" yo="448" id="10000790" name="inst_ED624245" depth="800000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_more_modern" x="288" y="168" w="32" h="64" xo="448" yo="448" id="10000840" name="inst_DB6905AE" depth="800000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_more_modern" x="257" y="168" w="32" h="64" xo="480" yo="448" id="10000841" name="inst_462B87F9" depth="800000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_more_modern" x="224" y="168" w="32" h="64" xo="416" yo="448" id="10000842" name="inst_A087DD35" depth="800000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>-1</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
