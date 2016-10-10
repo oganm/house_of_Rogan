@@ -50,7 +50,10 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
-  <instances/>
+  <instances>
+    <instance objName="obj_tlp_wcToKitchen" x="256" y="320" name="inst_95EADD6E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ext_kitchenToWC" x="224" y="320" name="inst_2FC2BA19" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+  </instances>
   <tiles>
     <tile bgName="bg_Tileset_Main" x="192" y="288" w="32" h="32" xo="0" yo="128" id="10000810" name="inst_A21577AF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_Tileset_Main" x="192" y="320" w="32" h="32" xo="0" yo="128" id="10000811" name="inst_16E14758" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
