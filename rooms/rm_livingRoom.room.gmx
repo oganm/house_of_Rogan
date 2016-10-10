@@ -8,7 +8,7 @@
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
-  <colour>12632256</colour>
+  <colour>0</colour>
   <showcolour>-1</showcolour>
   <code></code>
   <enableViews>-1</enableViews>
@@ -138,7 +138,6 @@
     <tile bgName="bg_Tileset_Main" x="608" y="416" w="32" h="32" xo="608" yo="288" id="10000509" name="inst_B4DE5413" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_Tileset_Main" x="352" y="384" w="32" h="64" xo="512" yo="256" id="10000510" name="inst_BA9FA2A0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_Tileset_Main" x="352" y="352" w="32" h="32" xo="512" yo="224" id="10000512" name="inst_D80CCCA3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_Tileset_Main" x="608" y="160" w="32" h="32" xo="544" yo="192" id="10000519" name="inst_B7AB4FE4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_Tileset_Main" x="576" y="256" w="32" h="32" xo="0" yo="128" id="10000551" name="inst_D0C0B0AF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_Tileset_Main" x="576" y="288" w="32" h="32" xo="0" yo="128" id="10000552" name="inst_26BD5FB8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_Tileset_Main" x="576" y="320" w="32" h="32" xo="0" yo="128" id="10000553" name="inst_D88DCDA4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -159,6 +158,7 @@
     <tile bgName="bg_Tileset_Main" x="416" y="320" w="32" h="32" xo="0" yo="128" id="10000631" name="inst_3CCE7EF9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_more_modern" x="672" y="352" w="32" h="32" xo="256" yo="384" id="10000673" name="inst_F236F7CC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_Tileset_Main" x="448" y="352" w="32" h="32" xo="0" yo="128" id="10000674" name="inst_F86CA65B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_Tileset_Main" x="608" y="160" w="32" h="32" xo="544" yo="224" id="10000976" name="inst_279C2DB7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_Tileset_Main" x="384" y="224" w="32" h="32" xo="64" yo="912" id="10000545" name="inst_71333344" depth="900000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_more_modern" x="473" y="256" w="23" h="28" xo="319" yo="254" id="10000610" name="inst_E522ED50" depth="900000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_more_modern" x="519" y="256" w="23" h="28" xo="319" yo="254" id="10000611" name="inst_6DD852F2" depth="900000" locked="0" colour="4294967295" scaleX="-1" scaleY="1"/>
