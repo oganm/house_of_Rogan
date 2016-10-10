@@ -65,6 +65,10 @@
       <sprite>sprites\spr_odo</sprite>
       <sprite>sprites\spr_quark</sprite>
     </sprites>
+    <sprites name="objects">
+      <sprite>sprites\spr_flowerPot</sprite>
+      <sprite>sprites\spr_chairBack</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_Tileset_Main</background>
@@ -125,16 +129,28 @@
     <object>objects\obj_follower</object>
     <object>objects\obj_controllable</object>
     <object>objects\obj_rsm</object>
-    <objects name="interactables">
+    <object>objects\obj_y_cat</object>
+    <objects name="interactablesAndObjects">
       <object>objects\obj_interactable</object>
       <object>objects\obj_interactableRandom</object>
       <objects name="LivingRoom">
         <object>objects\obj_TV</object>
+        <object>objects\obj_shoeplace</object>
+        <object>objects\obj_cupboard</object>
+        <object>objects\obj_table</object>
         <object>objects\obj_pillow</object>
         <object>objects\obj_b_cat</object>
       </objects>
       <objects name="Garden">
         <object>objects\obj_sign</object>
+      </objects>
+      <objects name="Kitchen">
+        <object>objects\obj_flower_interactionBox</object>
+        <object>objects\obj_hiddenCat</object>
+        <object>objects\obj_kale</object>
+        <object>objects\obj_frigde</object>
+        <object>objects\obj_chairBack</object>
+        <object>objects\obj_flower</object>
       </objects>
     </objects>
     <objects name="textbox">
@@ -150,12 +166,33 @@
         <object>objects\obj_tlp_livingRoomToGarden</object>
         <object>objects\obj_tlp_gardenToLivingRoom</object>
       </objects>
+      <objects name="livingRoomToKitchen">
+        <object>objects\obj_tlp_livingRoomToKitchen1</object>
+        <object>objects\obj_tlp_livingRoomToKitchen2</object>
+        <object>objects\obj_tlp_livingRoomToKitchen3</object>
+        <object>objects\obj_tlp_livingRoomToKitchen4</object>
+        <object>objects\obj_ext_livingRoomToKitchen1</object>
+        <object>objects\obj_ext_livingRoomToKitchen2</object>
+        <object>objects\obj_ext_livingRoomToKitchen3</object>
+        <object>objects\obj_ext_livingRoomToKitchen4</object>
+      </objects>
+      <objects name="kitchenToLivingRoom">
+        <object>objects\obj_tlp_kitchenToLivingRoom1</object>
+        <object>objects\obj_tlp_kitchenToLivingRoom2</object>
+        <object>objects\obj_tlp_kitchenToLivingRoom3</object>
+        <object>objects\obj_tlp_kitchenToLivingRoom4</object>
+        <object>objects\obj_ext_kitchenToLivingRoom1</object>
+        <object>objects\obj_ext_kitchenToLivingRoom2</object>
+        <object>objects\obj_ext_kitchenToLivingRoom3</object>
+        <object>objects\obj_ext_kitchenToLivingRoom4</object>
+      </objects>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_startup</room>
     <room>rooms\rm_livingRoom</room>
     <room>rooms\room0</room>
+    <room>rooms\rm_kitchen</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

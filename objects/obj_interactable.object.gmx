@@ -30,6 +30,7 @@ depth = global.DebugDepth
 startInteract = false
 sprite = spr_rsm_face
 text[0] = 'test'
+interactTrigger = false
 </string>
           </argument>
         </arguments>
@@ -56,6 +57,7 @@ text[0] = 'test'
 if (startInteract){
     scr_text(text,sprite)
     startInteract = false
+    interactTrigger = true
 }
 </string>
           </argument>

@@ -105,8 +105,11 @@ if (porting == true){
     depth = -90000
     fadeAlpha = clamp(fadeAlpha + fadeRate,0,1)
     if(fadeAlpha ==1){
-        global.teleport_movingObject.moving=false
+        global.teleport_movingObject.moving = false
         room_goto(destRoom)   
+    }
+    if(global.teleport_movingObject.follower != noone){
+        global.teleport_movingObject.follower.moving = false
     }
     draw_set_color(c_black)
     draw_set_alpha(fadeAlpha)
