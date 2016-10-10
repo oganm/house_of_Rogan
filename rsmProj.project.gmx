@@ -180,6 +180,9 @@
         <object>objects\obj_oganTrigger</object>
         <object>objects\obj_flame</object>
         <object>objects\obj_sleepingOgan</object>
+        <object>objects\obj_oganLaundry</object>
+        <object>objects\obj_oganBookcase</object>
+        <object>objects\obj_pictures</object>
       </objects>
     </objects>
     <objects name="textbox">
