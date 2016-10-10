@@ -150,6 +150,7 @@
         <object>objects\obj_dishwasher</object>
         <object>objects\obj_hiddenCat</object>
         <object>objects\obj_kale</object>
+        <object>objects\obj_voices</object>
         <object>objects\obj_frigde</object>
         <object>objects\obj_chairBack</object>
         <object>objects\obj_flower</object>
@@ -189,6 +190,22 @@
         <object>objects\obj_ext_kitchenToLivingRoom3</object>
         <object>objects\obj_ext_kitchenToLivingRoom4</object>
       </objects>
+      <objects name="kitchenToRooms">
+        <object>objects\obj_tlp_kitchenToOgan</object>
+        <object>objects\obj_tlp_kitchenToWC</object>
+        <object>objects\obj_tlp_kitchenToRsm</object>
+        <object>objects\obj_ext_kitchenToOgan</object>
+        <object>objects\obj_ext_kitchenToRsm</object>
+        <object>objects\obj_ext_kitchenToWC</object>
+      </objects>
+      <objects name="roomsToKitchen">
+        <object>objects\obj_tlp_oganToKitchen</object>
+        <object>objects\obj_tlp_rsmToKitchen</object>
+        <object>objects\obj_tlp_wcToKitchen</object>
+        <object>objects\obj_ext_oganToKitchen</object>
+        <object>objects\obj_ext_wcToKitchen</object>
+        <object>objects\obj_ext_rsmToKitchen</object>
+      </objects>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -196,7 +213,9 @@
     <room>rooms\rm_livingRoom</room>
     <room>rooms\room0</room>
     <room>rooms\rm_kitchen</room>
-    <room>rooms\room4</room>
+    <room>rooms\rm_ogan</room>
+    <room>rooms\rm_rsm</room>
+    <room>rooms\rm_wc</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
