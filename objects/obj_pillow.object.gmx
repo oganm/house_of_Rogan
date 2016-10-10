@@ -34,22 +34,22 @@ text = 0
 text[0] = "Pink beanbag!"
 
 textRandom[0] = text
-spriteRandom[0] = spr_rsm_face
+spriteRandom[0] = spr_rsmr_down
 text = 0
 
 text[0] = "So couchy!"
 textRandom[1] = text
-spriteRandom[1] = spr_rsm_face
+spriteRandom[1] = spr_rsmr_down
 text = 0 
 
 text[0] = "So pink!"
 textRandom[2]= text
-spriteRandom[2] = spr_rsm_face
+spriteRandom[2] = spr_rsmr_down
 text = 0
 
 text[0] = "So beany!"
 textRandom[3]= text
-spriteRandom[3] = spr_rsm_face
+spriteRandom[3] = spr_rsmr_down
 text = 0
 
 text[0] = "Meow..."

@@ -28,7 +28,7 @@
             <string>/// Create Event
 depth = global.DebugDepth
 startInteract = false
-sprite = spr_rsm_face
+sprite = spr_rsmr_down
 text[0] = 'test'
 interactTrigger = false
 </string>
