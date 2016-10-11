@@ -15,7 +15,17 @@ global.DebugDepth = 999999999
 room_goto(firstRoom)
 global.gridSize = 32
 
-global.yellowCat = true</code>
+// will be set to false once cat is found
+global.yellowCat = true
+
+//will be set to true once the kazoo is found
+global.kazoo = false
+
+
+
+audio_play_sound(snd_background,1,true)
+//sound_volume(snd_background, 0.01)
+audio_sound_gain(snd_background, 0.01, 1);</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

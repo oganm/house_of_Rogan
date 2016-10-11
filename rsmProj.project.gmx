@@ -8,6 +8,18 @@
   </NewExtensions>
   <sounds name="sound">
     <sound>sound\snd_gun</sound>
+    <sound>sound\snd_help</sound>
+    <sound>sound\snd_background</sound>
+    <sounds name="kazoo">
+      <sound>sound\snd_kA3</sound>
+      <sound>sound\snd_kB3</sound>
+      <sound>sound\snd_kC3</sound>
+      <sound>sound\snd_kD3</sound>
+      <sound>sound\snd_kE3</sound>
+      <sound>sound\snd_kF3</sound>
+      <sound>sound\snd_kG3</sound>
+      <sound>sound\snd_kC4</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_teleport</sprite>
@@ -180,8 +192,10 @@
         <object>objects\obj_oganTrigger</object>
         <object>objects\obj_flame</object>
         <object>objects\obj_sleepingOgan</object>
+        <object>objects\obj_kazooPlay</object>
         <object>objects\obj_oganLaundry</object>
         <object>objects\obj_oganBookcase</object>
+        <object>objects\obj_kazoo</object>
         <object>objects\obj_pictures</object>
       </objects>
     </objects>

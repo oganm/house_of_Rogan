@@ -2,9 +2,9 @@
 <object>
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,51 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*
-    Read the scripts, they contain all the required information about
-    all the below functions.
-*/
+            <string>silenceTimer = -1 
 
-// Initialize the CTB engine
-ctb_init();
-
-// Mark this object as being a textbox
-ctb_create();
-
-// Add some icons
-icon_typing = spr_ico_typing_small;
-icon_finished = spr_ico_continue_small;
-
-// Add some colors
-ctb_add_color( "default", c_white );
-ctb_add_color( "white", c_white );
-ctb_add_color( "blue", c_blue );
-ctb_add_color( "yellow", c_yellow );
-ctb_add_color( "red", c_red );
-
-// Add some fonts
-ctb_add_font( "default", fnt_crux );
-ctb_add_font( "normal", f_normal );
-ctb_add_font( "other", f_other );
-
-// Add a sound
-ctb_add_sound( "gun", snd_help );
-
-// Add a custom command to change character image!
-char_sprite = global.textSprite;
-ctb_add_command( "char", command_char );
-
-// Set the padding of the textbox
-// We add a big left padding to insert a character sprite in rhw textbox
-ctb_set_padding( 116,10,10,10 );
-
-// Set the textbox's background
-sprite_index = ctb_load_subimage( spr_textbox_slice9_subimages, view_wview-20, view_hview/4 );
-
-// Add some text in the textbox.
-for (i = 0; i &lt; array_length_1d(global.text); i += 1){
-    ctb_add_text(global.text[i])
-}
+silenceLimit = 60*5
 </string>
           </argument>
         </arguments>
@@ -92,32 +50,106 @@ for (i = 0; i &lt; array_length_1d(global.text); i += 1){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ctb_update();
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>depth = -90000
-ctb_draw();
-draw_sprite( char_sprite, 0, x+6, y+6 );
+            <string>C3 = keyboard_check_pressed(ord("1"))
+D3 = keyboard_check_pressed(ord("2"))
+E3 = keyboard_check_pressed(ord("3"))
+F3 = keyboard_check_pressed(ord("4"))
+G3 = keyboard_check_pressed(ord("5"))
+A3 = keyboard_check_pressed(ord("6"))
+B3 = keyboard_check_pressed(ord("7"))
+C4 = keyboard_check_pressed(ord("8"))
+
+C3Rel = keyboard_check_released(ord("1"))
+D3Rel = keyboard_check_released(ord("2"))
+E3Rel = keyboard_check_released(ord("3"))
+F3Rel = keyboard_check_released(ord("4"))
+G3Rel = keyboard_check_released(ord("5"))
+A3Rel = keyboard_check_released(ord("6"))
+B3Rel = keyboard_check_released(ord("7"))
+C4Rel = keyboard_check_released(ord("8"))
+
+if (C3 or D3 or E3 or F3 or G3 or A3 or B3 or C4){
+    silenceTimer = 0
+    audio_sound_gain(snd_background, 0, 1);
+}
+
+if(silenceTimer &gt;=0){
+    silenceTimer = silenceTimer + 1
+    if(silenceTimer &gt;= silenceLimit){
+        silenceTimer = -1
+        audio_sound_gain(snd_background, 0.01, 1);
+    }
+    
+}
+
+if (C3){
+    audio_play_sound(snd_kC3,1,true)
+}
+
+if (C3Rel){
+    audio_stop_sound(snd_kC3)
+}
+
+if (D3){
+    audio_play_sound(snd_kD3,1,true)
+}
+
+if (D3Rel){
+    audio_stop_sound(snd_kD3)
+}
+
+if (E3){
+    audio_play_sound(snd_kE3,1,true)
+}
+
+if (E3Rel){
+    audio_stop_sound(snd_kE3)
+}
+
+
+if (F3){
+    audio_play_sound(snd_kF3,1,true)
+}
+
+if (F3Rel){
+    audio_stop_sound(snd_kF3)
+}
+
+
+if (G3){
+    audio_play_sound(snd_kG3,1,true)
+}
+
+if (G3Rel){
+    audio_stop_sound(snd_kG3)
+}
+
+
+if (A3){
+    audio_play_sound(snd_kA3,1,true)
+}
+
+if (A3Rel){
+    audio_stop_sound(snd_kA3)
+}
+
+if (B3){
+    audio_play_sound(snd_kB3,1,true)
+}
+
+if (B3Rel){
+    audio_stop_sound(snd_kB3)
+}
+
+
+if (C4){
+    audio_play_sound(snd_kC4,1,true)
+}
+
+if (C4Rel){
+    audio_stop_sound(snd_kC4)
+}
+
 </string>
           </argument>
         </arguments>

@@ -72,8 +72,9 @@
     <instance objName="obj_sleepingOgan" x="64" y="384" name="inst_A3FE6B18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_oganTrigger" x="64" y="384" name="inst_E5410FCC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_oganLaundry" x="160" y="224" name="inst_74D620C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_oganBookcase" x="96" y="224" name="inst_EA76F111" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_oganBookcase" x="96" y="224" name="inst_EA76F111" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_pictures" x="192" y="320" name="inst_833C8BFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_kazoo" x="128" y="224" name="inst_CEC1E13C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_Tileset_Main" x="192" y="288" w="32" h="32" xo="0" yo="128" id="10000810" name="inst_A21577AF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
