@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>depth = 60000
+            <string>depth = 1000000
 </string>
           </argument>
         </arguments>

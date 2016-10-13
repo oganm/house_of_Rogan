@@ -30,7 +30,7 @@ event_inherited()
 
 destObj = obj_ext_kitchenToWC
 destRoom = rm_wc
-dir = 0
+dir = 3
 
 
 </string>

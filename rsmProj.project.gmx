@@ -20,6 +20,11 @@
       <sound>sound\snd_kG3</sound>
       <sound>sound\snd_kC4</sound>
     </sounds>
+    <sounds name="radio">
+      <sound>sound\snd_beach</sound>
+      <sound>sound\snd_merry</sound>
+      <sound>sound\snd_banana</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_teleport</sprite>
@@ -90,6 +95,9 @@
       <sprite>sprites\spr_bedSheet</sprite>
       <sprite>sprites\spr_floor</sprite>
       <sprite>sprites\spr_flame</sprite>
+      <sprite>sprites\spr_chair</sprite>
+      <sprite>sprites\spr_furnitureCorner</sprite>
+      <sprite>sprites\spr_radio</sprite>
     </sprites>
     <sprites name="ogan">
       <sprite>sprites\spr_ogan_down</sprite>
@@ -104,6 +112,8 @@
     <background>background\bg_more_modern</background>
     <background>background\background3</background>
     <background>background\couch</background>
+    <background>background\bg_sideways</background>
+    <background>background\background7</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -198,6 +208,18 @@
         <object>objects\obj_kazoo</object>
         <object>objects\obj_pictures</object>
       </objects>
+      <objects name="WC">
+        <object>objects\obj_drawer</object>
+      </objects>
+      <objects name="rsm">
+        <object>objects\obj_sheetRsm</object>
+        <object>objects\obj_joy</object>
+        <object>objects\obj_topShelf</object>
+        <object>objects\obj_radio_action</object>
+        <object>objects\obj_rsmChair</object>
+        <object>objects\obj_furnitureCorner</object>
+        <object>objects\obj_radio</object>
+      </objects>
     </objects>
     <objects name="textbox">
       <object>objects\obj_textbox</object>
@@ -258,6 +280,7 @@
     <room>rooms\rm_ogan</room>
     <room>rooms\rm_rsm</room>
     <room>rooms\rm_wc</room>
+    <room>rooms\rm_garden</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

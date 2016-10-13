@@ -146,6 +146,7 @@
     <tile bgName="bg_Tileset_Main" x="83" y="224" w="16" h="32" xo="416" yo="736" id="10001100" name="inst_A2517998" depth="900000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_Tileset_Main" x="192" y="192" w="16" h="32" xo="416" yo="736" id="10001101" name="inst_39B9B0FA" depth="900000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_Tileset_Main" x="179" y="224" w="16" h="32" xo="816" yo="1456" id="10001104" name="inst_467CB731" depth="900000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_Tileset_Main" x="64" y="288" w="16" h="32" xo="800" yo="1456" id="10001387" name="inst_3D99A8B6" depth="900000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background3" x="95" y="208" w="64" h="48" xo="256" yo="48" id="10000994" name="inst_FB1FBF2D" depth="800000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_Tileset_Main" x="160" y="224" w="32" h="32" xo="768" yo="1152" id="10000998" name="inst_482663BF" depth="800000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_Tileset_Main" x="128" y="192" w="32" h="32" xo="960" yo="1632" id="10001001" name="inst_3D7ED1E1" depth="800000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
