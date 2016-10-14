@@ -31,12 +31,10 @@ event_inherited();
 textRandom = 0;
 text = 0
 
-text[0] = "Resistance is futile.";
-text[1] =  "You will disarm your weapons, and escort us to Sector 001.";
-text[2] = "If you attempt to intervene, we will destroy you.";
+text[0] = "You can never touch me! I run the bar!"
 
 textRandom[0] = text
-spriteRandom[0] = spr_picard
+spriteRandom[0] = spr_quark
 text = 0
 
 text[0] = "I'm a doctor, not a botanist."

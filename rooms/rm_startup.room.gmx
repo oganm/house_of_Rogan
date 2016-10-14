@@ -17,11 +17,12 @@ global.gridSize = 32
 
 // will be set to false once cat is found
 global.yellowCat = true
-
+global.blackCat = true
 //will be set to true once the kazoo is found
 global.kazoo = false
 
-
+global.playing = false
+global.song = ''
 
 audio_play_sound(snd_background,1,true)
 //sound_volume(snd_background, 0.01)

@@ -104,6 +104,7 @@
       <sprite>sprites\spr_ogan_left</sprite>
       <sprite>sprites\spr_ogan_right</sprite>
       <sprite>sprites\spr_ogan_up</sprite>
+      <sprite>sprites\spr_ogan_reallydown</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -174,6 +175,7 @@
       <objects name="LivingRoom">
         <object>objects\obj_TV</object>
         <object>objects\obj_shoeplace</object>
+        <object>objects\obj_door</object>
         <object>objects\obj_cupboard</object>
         <object>objects\obj_table</object>
         <object>objects\obj_pillow</object>
@@ -188,6 +190,7 @@
         <object>objects\obj_fridge</object>
         <object>objects\obj_hiddenCat</object>
         <object>objects\obj_kale</object>
+        <object>objects\obj_cleaningStuff</object>
         <object>objects\obj_voices</object>
         <object>objects\obj_chairBack</object>
         <object>objects\obj_flower</object>

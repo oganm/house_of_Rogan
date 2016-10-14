@@ -28,8 +28,8 @@
             <string>/// Create Event
 event_inherited();
 text[0] = "Classy...";
-playing = false
-song = ''
+
+
 </string>
           </argument>
         </arguments>
@@ -56,15 +56,15 @@ song = ''
 
 if(interactTrigger){
     interactTrigger = false
-    if(!playing){
-        playing = true
-        song = choose(snd_beach, snd_merry, snd_banana)
+    if(!global.playing){
+        global.playing = true
+        global.song = choose(snd_beach, snd_merry, snd_banana)
         audio_pause_sound(snd_background)
-        audio_play_sound(song, 1, true)
-        audio_sound_gain(song, 0.01, 1);
+        audio_play_sound(global.song, 1, true)
+        audio_sound_gain(global.song, 0.01, 1);
     } else {
-        playing = false
-        audio_stop_sound(song)
+        global.playing = false
+        audio_stop_sound(global.song)
         audio_resume_sound(snd_background)
     }
 }

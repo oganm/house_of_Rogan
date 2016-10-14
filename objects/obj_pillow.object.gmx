@@ -27,6 +27,17 @@
             <kind>1</kind>
             <string>/// Create Event
 event_inherited();
+
+if(!global.blackCat){
+    instance_create(x,y,obj_b_cat)
+    instance_destroy();
+}
+
+smokeTimer = 0
+smokeInterval[0] = 60*5
+smokeInterval[1] = 60*10
+smokeLimit = 60*5
+
 //delete textRandom from the parent
 textRandom = 0;
 text = 0
@@ -90,8 +101,19 @@ text = 0
 
 if (choice == 4){
     instance_create(x,y,obj_b_cat)
+    global.blackCat = false
     instance_destroy();
 }
+
+
+smokeTimer +=1
+
+if(smokeTimer &gt;= smokeLimit){
+    smokeLimit = smokeInterval[0] + floor(random(smokeInterval[1] - smokeInterval[0]))
+    smokeTimer = 0
+    effect_create_above(ef_smoke, x + global.gridSize/2, y + global.gridSize/2, 0, c_black);
+}
+
 </string>
           </argument>
         </arguments>
