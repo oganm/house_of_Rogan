@@ -21,12 +21,15 @@ global.blackCat = true
 //will be set to true once the kazoo is found
 global.kazoo = false
 
+// is radio playing?
 global.playing = false
-global.song = ''
 
-audio_play_sound(snd_background,1,true)
-//sound_volume(snd_background, 0.01)
-audio_sound_gain(snd_background, 0.01, 1);
+//default background sound settings
+global.defaultBackground = snd_background
+global.song = global.defaultBackground
+global.songVolume = 0.1
+audio_play_sound(global.song,1,true)
+audio_sound_gain(global.song, global.songVolume, 1);
 
 randomize();
 

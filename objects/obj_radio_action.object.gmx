@@ -59,13 +59,13 @@ if(interactTrigger){
     if(!global.playing){
         global.playing = true
         global.song = choose(snd_beach, snd_merry, snd_banana)
-        audio_pause_sound(snd_background)
+        audio_pause_sound(global.defaultBackground)
         audio_play_sound(global.song, 1, true)
-        audio_sound_gain(global.song, 0.01, 1);
+        audio_sound_gain(global.song,global.songVolume, 1);
     } else {
         global.playing = false
         audio_stop_sound(global.song)
-        audio_resume_sound(snd_background)
+        audio_resume_sound(global.defaultBackground)
     }
 }
 </string>

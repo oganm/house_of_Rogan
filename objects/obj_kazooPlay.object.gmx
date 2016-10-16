@@ -71,7 +71,7 @@ C4Rel = keyboard_check_released(ord("8"))
 if (C3 or D3 or E3 or F3 or G3 or A3 or B3 or C4){
     silenceTimer = 0
     //audio_sound_gain(snd_background, 0, 1);
-    audio_pause_sound(snd_background)
+    audio_pause_sound(global.song)
 }
 
 if(silenceTimer &gt;=0){
@@ -79,7 +79,7 @@ if(silenceTimer &gt;=0){
     if(silenceTimer &gt;= silenceLimit){
         silenceTimer = -1
         //audio_sound_gain(snd_background, 0.01, 1);
-        audio_resume_sound(snd_background)
+        audio_resume_sound(global.song)
     }
     
 }
