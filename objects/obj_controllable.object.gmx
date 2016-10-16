@@ -294,7 +294,7 @@ if(skipInteractionTimer &gt;= 10){
 
 draw_self();
 
-draw_circle(x+xOfset+gridSize/2, y+yOfset+gridSize/2, 8, 3)
+//draw_circle(x+xOfset+gridSize/2, y+yOfset+gridSize/2, 8, 3)
 </string>
           </argument>
         </arguments>
